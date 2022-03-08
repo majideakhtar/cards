@@ -3,19 +3,38 @@ package main
 import "fmt"
 
 func main() {
-	str1 := "Ace of Spades"
-	str2 := "Five of Diamonds"
-	var num int
-	card1, card2, num := newCard(str1, str2)
+	cards := deck{"Ace of Spades", "Five of Diamonds"}
+	// fmt.Println(cards)
 
-	fmt.Println(card1)
-	fmt.Println(card2)
-	fmt.Println(num)
+	cards = append(cards, "Six of Hearts")
+	fmt.Println(cards)
+
+	cards.print()
+
+	// For deck print()
+	// for i, card := range cards {
+	// 	fmt.Printf("\nIndex is %v, Value is %v\n", i, card)
+	// }
+
+	// for _, card := range cards {
+	// 	fmt.Printf(" Value is %v\n", card)
+	// }
 }
 
-func newCard(str1 string, str2 string) (string, string, int) {
-	return str1, str2, 10
-}
+// func main() {
+// 	str1 := "Ace of Spades"
+// 	str2 := "Five of Diamonds"
+// 	var num int
+// 	card1, card2, num := newCard(str1, str2)
+
+// 	fmt.Println(card1)
+// 	fmt.Println(card2)
+// 	fmt.Println(num)
+// }
+
+// func newCard(str1 string, str2 string) (string, string, int) {
+// 	return str1, str2, 10
+// }
 
 // // Variable Declarations
 // func main() {
