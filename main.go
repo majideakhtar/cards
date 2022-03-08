@@ -3,10 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	cards := deck{"Ace of Spades", "Five of Diamonds"}
-	// fmt.Println(cards)
-
-	cards = append(cards, "Six of Hearts")
+	cards := newDeck()
 	fmt.Println(cards)
 	fmt.Printf("Type %T\n", cards)
 
