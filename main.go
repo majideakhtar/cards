@@ -8,6 +8,7 @@ func main() {
 
 	cards = append(cards, "Six of Hearts")
 	fmt.Println(cards)
+	fmt.Printf("Type %T\n", cards)
 
 	cards.print()
 
