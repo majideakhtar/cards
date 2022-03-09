@@ -1,13 +1,13 @@
 package main
 
-import "fmt"
-
 func main() {
 	cards := newDeck()
-	fmt.Println(cards)
-	fmt.Printf("Type %T\n", cards)
+	handSize := 5
+	hand, remainingCards := deal(cards, handSize)
 
-	cards.print()
+	// cards.print()
+	hand.print()
+	remainingCards.print()
 
 	// For deck print()
 	// for i, card := range cards {
