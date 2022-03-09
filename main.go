@@ -1,13 +1,20 @@
 package main
 
 func main() {
-	cards := newDeck()
-	handSize := 5
-	hand, remainingCards := deal(cards, handSize)
+	cards := newDeckFromFile("my_cards")
+	cards.print()
+	// cards := newDeck()
+	// handSize := 5
+	// hand, remainingCards := deal(cards, handSize)
 
-	// cards.print()
-	hand.print()
-	remainingCards.print()
+	// // cards.print()
+	// hand.print()
+	// remainingCards.print()
+	// fmt.Println(cards.toString())
+
+	// cards.saveToFile("my_cards")
+
+	// my_cards :=
 
 	// For deck print()
 	// for i, card := range cards {
