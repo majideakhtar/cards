@@ -16,8 +16,6 @@ func main() {
 
 	// cards.saveToFile("my_cards")
 
-	// my_cards :=
-
 	// For deck print()
 	// for i, card := range cards {
 	// 	fmt.Printf("\nIndex is %v, Value is %v\n", i, card)
